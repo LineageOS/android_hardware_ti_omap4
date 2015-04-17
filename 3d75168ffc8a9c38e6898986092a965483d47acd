@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa7ab95a_620376b9",
+        "filename": "pvr-source/eurasiacon/build/linux2/config/core.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 515,
+      "author": {
+        "id": 13026
+      },
+      "writtenOn": "2015-04-17T08:06:47Z",
+      "side": 1,
+      "message": "My bad, this is not the right solution here. I just needed to make sure BOARD_USE_TI_LIBION is properly exported.",
+      "parentUuid": "3ac371cc_2a3a1bce",
+      "revId": "3d75168ffc8a9c38e6898986092a965483d47acd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3ac371cc_0a375fe4",
         "filename": "pvr-source/eurasiacon/build/linux2/config/core.mk",
         "patchSetId": 2
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "fa7ab95a_82007aac",
+        "filename": "pvr-source/eurasiacon/build/linux2/config/core.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 553,
+      "author": {
+        "id": 13026
+      },
+      "writtenOn": "2015-04-17T08:06:47Z",
+      "side": 1,
+      "message": "My bad, this is not the right solution here. I just needed to make sure BOARD_USE_TI_LIBION is properly exported.",
+      "parentUuid": "3ac371cc_0a375fe4",
+      "revId": "3d75168ffc8a9c38e6898986092a965483d47acd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3ac371cc_ea6da3cd",
         "filename": "pvr-source/eurasiacon/build/linux2/omap4430_android/Makefile",
         "patchSetId": 2
@@ -47,6 +83,24 @@
       "writtenOn": "2015-04-07T07:32:47Z",
       "side": 1,
       "message": "The only purpose of USE_TI_LIBION that I can see is to switch SUPPORT_TI_LIBION on. We also have -DUSE_TI_LIBION; do we need it as variable?",
+      "revId": "3d75168ffc8a9c38e6898986092a965483d47acd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa7ab95a_a22bbe32",
+        "filename": "pvr-source/eurasiacon/build/linux2/omap4430_android/Makefile",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 13026
+      },
+      "writtenOn": "2015-04-17T08:06:47Z",
+      "side": 1,
+      "message": "My bad, all is good here. I just needed to make sure BOARD_USE_TI_LIBION is properly exported.",
+      "parentUuid": "3ac371cc_ea6da3cd",
       "revId": "3d75168ffc8a9c38e6898986092a965483d47acd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
