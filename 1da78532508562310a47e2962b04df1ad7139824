@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a89bdaa_d9999321",
+        "filename": "common.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 13026
+      },
+      "writtenOn": "2015-05-08T15:48:31Z",
+      "side": 1,
+      "message": "Awesome, with this change the non-DMA buffered kernel (i.e., 3.0) compiles on the same branch, so you could probably push this to the main repo soon.",
+      "range": {
+        "startLine": 38,
+        "startChar": 29,
+        "endLine": 38,
+        "endChar": 34
+      },
+      "revId": "1da78532508562310a47e2962b04df1ad7139824",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
