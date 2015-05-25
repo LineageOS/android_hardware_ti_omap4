@@ -145,6 +145,7 @@ EXIT:
 
 	}
 
+#ifdef OMAP_ENHANCEMENT_VTC
 OMX_ERRORTYPE GLUE_CameraVtcAllocateMemory(OMX_IN OMX_HANDLETYPE hComponent, OMX_TI_PARAM_VTCSLICE *pVtcConfig,
 											OMX_U32 nFrmWidth, OMX_U32 nFrmHeight)
 {
@@ -254,3 +255,4 @@ EXIT:
 #endif
     return eError;
 }
+#endif
