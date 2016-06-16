@@ -34,6 +34,24 @@
       "revId": "8d0de830c81234da8a6536af4bd07bb69fffc274",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5faad753_1b59ea8c",
+        "filename": "cmhw/org/cyanogenmod/hardware/DisplayColorCalibration.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 3719
+      },
+      "writtenOn": "2016-06-16T17:33:13Z",
+      "side": 1,
+      "message": "All Omap4 devices have that capability.",
+      "parentUuid": "5faad753_bb4e9635",
+      "revId": "8d0de830c81234da8a6536af4bd07bb69fffc274",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
