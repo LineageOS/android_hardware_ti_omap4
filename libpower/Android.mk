@@ -1,4 +1,5 @@
-# Copyright (C) 2011 The Android Open Source Project
+#
+# Copyright 2016 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -11,21 +12,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+#
 
-# This file lists the modules that are specific to OMAP4 but are used by
-# all OMAP4 devices.
+LOCAL_PATH := $(call my-dir)
 
-OMAP4_NEXT_FOLDER := hardware/ti/omap4
+include $(CLEAR_VARS)
 
-PRODUCT_PACKAGES += \
-    hwcomposer.omap4 \
-    power.omap4
+LOCAL_MODULE := power.omap4
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_SRC_FILES := power.c
+LOCAL_SHARED_LIBRARIES := liblog
+LOCAL_MODULE_TAGS := optional
 
-PRODUCT_VENDOR_KERNEL_HEADERS := hardware/ti/omap4/kernel-headers
+LOCAL_CFLAGS := -Wall -Werror
 
-# Init
-PRODUCT_COPY_FILES += \
-    $(OMAP4_NEXT_FOLDER)/rootdir/init.omap4.rc:root/init.omap4.rc
-
-$(call inherit-product, hardware/ti/omap4/common.mk)
-$(call inherit-product-if-exists, vendor/ti/omap4/omap4-vendor.mk)
+include $(BUILD_SHARED_LIBRARY)
