@@ -46,6 +46,30 @@
       "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa5d592f_cc8fcdcb",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2017-02-20T19:11:34Z",
+      "side": 1,
+      "message": "Commonizing more is always good, but it\u0027s good to be aware of the issues that surround commonizing flags. I would be very careful allowing a precedent of allowing devices to override flags set in a common repo. For an example of what I\u0027m trying to avoid, see the device/qcom/common and device/qcom/msmXXXX repositories on CAF. Ultimately it\u0027s your repository (ies), but encouraging behavior that causes flag values to be very heavily dependent on inheritance order is something we\u0027ve run into maintainability problems with in the past.",
+      "parentUuid": "fa5d592f_ccf8ed4b",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 41
+      },
+      "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
