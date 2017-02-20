@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa5d592f_0cce055b",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2017-02-20T17:41:41Z",
+      "side": 1,
+      "message": "Allowing devices to override this is usually a bad idea, it leads to complex inheritance order-dependent BoardConfig setups. Typically it\u0027s better for flags that are not actually common to be set outside any common repos.",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 41
+      },
+      "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
