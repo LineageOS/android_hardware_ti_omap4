@@ -70,6 +70,30 @@
       "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa5d592f_87040e16",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13026
+      },
+      "writtenOn": "2017-02-20T21:41:33Z",
+      "side": 1,
+      "message": "Right, but the current situation is even more imperfect:\n- TARGET_BOARD_PLATFORM is already set here for h/ti/omap4 users, so exactly the same amount of possible dependency issues before and after, except now f/native hardcodes for the whole platform, irrespective of SGX DDK.\n- We need to be able to override -DWORKAROUND_BUG_10194508\u003d1 in f/native eventually; things can only happen in tandem, or not at all.\n\nA convoluted compromise would be to have BOARD_EGL_WORKAROUND_BUG_10194508 ?\u003d true replacing current line 49 of f/native/opengl/libs/Android.mk, then disable BOARD_EGL_WORKAROUND_BUG_10194508 in BoardConfigCommon.mk here (or elsewhere), when a newer DDK is ready.",
+      "parentUuid": "fa5d592f_cc8fcdcb",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 41
+      },
+      "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
