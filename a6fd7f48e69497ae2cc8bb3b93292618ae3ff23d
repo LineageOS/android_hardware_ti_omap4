@@ -22,6 +22,30 @@
       "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa5d592f_ccf8ed4b",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 13026
+      },
+      "writtenOn": "2017-02-20T19:00:14Z",
+      "side": 1,
+      "message": "Sure, I can see your point, but moving this flag here makes sense for OMAP4:\n- There was a recent push to commonize more into h/ti/omap4\n- Current behavior is not changed, but made more flexible\n- Although it doesn\u0027t make a difference now, with a newer DDK, we\u0027d need to remove this kludge (that\u0027s how I stumbled upon this).\n\nAs of now, f/native has both the board flag and the OMAP4 hardcoding. OMAP4 devices that don\u0027t use h/ti/omap4 (can\u0027t think of any, hopefully a minority), should use the flag.",
+      "parentUuid": "fa5d592f_0cce055b",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 41
+      },
+      "revId": "a6fd7f48e69497ae2cc8bb3b93292618ae3ff23d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
