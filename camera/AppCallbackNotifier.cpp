@@ -1122,7 +1122,11 @@ void AppCallbackNotifier::notifyFrame()
                                                       this,
                                                       raw_picture,
                                                       exif_data, frame->mBuffer);
+#ifdef ANDROID_API_N_OR_LATER
                     gEncoderQueue.add(frame->mBuffer->mapped, encoder);
+#else
+                    encoder->run();
+#endif
                     encoder->run("Encoder_libjpeg-AppCallbackNotifier");
                     encoder.clear();
                     if (params != NULL)
