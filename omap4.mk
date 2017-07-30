@@ -51,5 +51,9 @@ ADDITIONAL_BUILD_PROPERTIES += \
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.egl.destroy_after_detach=true
 
+# make 1GB phones more responsive by enabling low_ram mode at the expense of less eye candy
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.config.low_ram=true
+
 $(call inherit-product, hardware/ti/omap4/common.mk)
 $(call inherit-product-if-exists, vendor/ti/omap4/omap4-vendor.mk)
