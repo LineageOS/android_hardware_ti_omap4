@@ -90,7 +90,7 @@ TI_CAMERAHAL_COMMON_INCLUDES := \
     $(LOCAL_PATH)/../include \
     $(LOCAL_PATH)/../hwc \
     external/jpeg \
-    external/jhead \
+    $(LOCAL_PATH)/../libjhead \
     $(LOCAL_PATH)/../libtiutils \
     $(LOCAL_PATH)/inc \
     system/media/camera/include
