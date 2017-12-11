@@ -24,3 +24,6 @@ PVR_MODULES:
 			$(KERNEL_MODULES_OUT)/pvrsrvkm.ko
 
 TARGET_KERNEL_MODULES += PVR_MODULES
+
+# Lineage target to build standard modules
+TARGET_KERNEL_MODULES += INSTALLED_KERNEL_MODULES
